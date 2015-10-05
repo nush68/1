@@ -1,41 +1,41 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="108" x="-77" y="1">
+  <block type="movement_forward" id="1" x="-77" y="1">
     <next>
-      <block type="movement_setmotors" id="199" inline="true">
+      <block type="movement_setmotors" id="2" inline="true">
         <value name="BOTHMOVLEFT">
-          <block type="math_number" id="238">
+          <block type="math_number" id="3">
             <field name="NUM">125000</field>
           </block>
         </value>
         <value name="BOTHMOVRIGHT">
-          <block type="math_number" id="252">
+          <block type="math_number" id="4">
             <field name="NUM">125000</field>
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="262">
+          <block type="movement_stop" id="5">
             <next>
-              <block type="movement_rightmotor" id="272" inline="true">
+              <block type="movement_rightmotor" id="6" inline="true">
                 <value name="MOVRIGHT">
-                  <block type="math_number" id="279">
+                  <block type="math_number" id="7">
                     <field name="NUM">32500</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_stop" id="289">
+                  <block type="movement_stop" id="8">
                     <next>
-                      <block type="movement_forward" id="308">
+                      <block type="movement_forward" id="9">
                         <next>
-                          <block type="movement_stop" id="318">
+                          <block type="movement_stop" id="10">
                             <next>
-                              <block type="movement_rightmotor" id="328" inline="true">
+                              <block type="movement_rightmotor" id="11" inline="true">
                                 <value name="MOVRIGHT">
-                                  <block type="math_number" id="335">
+                                  <block type="math_number" id="12">
                                     <field name="NUM">32500</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="movement_stop" id="355"></block>
+                                  <block type="movement_stop" id="13"></block>
                                 </next>
                               </block>
                             </next>
