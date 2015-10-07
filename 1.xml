@@ -52,45 +52,4 @@
       </block>
     </next>
   </block>
-  <block type="controls_repeat" id="125" inline="true" x="-143" y="-50">
-    <value name="TIMES">
-      <block type="math_number" id="132">
-        <field name="NUM">2</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="24">
-        <next>
-          <block type="movement_setmotors" id="43" inline="true">
-            <value name="BOTHMOVLEFT">
-              <block type="math_number" id="56">
-                <field name="NUM">12500</field>
-              </block>
-            </value>
-            <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="72">
-                <field name="NUM">12500</field>
-              </block>
-            </value>
-            <next>
-              <block type="movement_stop" id="82">
-                <next>
-                  <block type="movement_rightmotor" id="92" inline="true">
-                    <value name="MOVRIGHT">
-                      <block type="math_number" id="99">
-                        <field name="NUM">32500</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_stop" id="118"></block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </statement>
-  </block>
 </xml>
