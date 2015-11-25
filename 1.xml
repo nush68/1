@@ -2,12 +2,12 @@
   <block type="oled_setcursor" id="32" inline="true" x="336" y="118">
     <value name="STARTX">
       <block type="math_number" id="48">
-        <field name="NUM">10</field>
+        <field name="NUM">0</field>
       </block>
     </value>
     <value name="STARTY">
       <block type="math_number" id="49">
-        <field name="NUM">10</field>
+        <field name="NUM">0</field>
       </block>
     </value>
     <next>
@@ -36,14 +36,59 @@
                       <block type="oled_color" id="118">
                         <field name="OBJECT">GREEN</field>
                         <next>
-                          <block type="movement_forward" id="23">
+                          <block type="led_select" id="119" inline="true">
+                            <field name="ACTION">ON</field>
+                            <value name="LED">
+                              <block type="math_number" id="120">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
                             <next>
-                              <block type="robot_delay" id="34" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="41">
-                                    <field name="NUM">5000</field>
+                              <block type="oled_color" id="133">
+                                <field name="OBJECT">GREEN</field>
+                                <next>
+                                  <block type="led_select" id="121" inline="true">
+                                    <field name="ACTION">ON</field>
+                                    <value name="LED">
+                                      <block type="math_number" id="122">
+                                        <field name="NUM">4</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="oled_color" id="134">
+                                        <field name="OBJECT">GREEN</field>
+                                        <next>
+                                          <block type="led_select" id="123" inline="true">
+                                            <field name="ACTION">ON</field>
+                                            <value name="LED">
+                                              <block type="math_number" id="124">
+                                                <field name="NUM">3</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="oled_color" id="135">
+                                                <field name="OBJECT">GREEN</field>
+                                                <next>
+                                                  <block type="movement_forward" id="23">
+                                                    <next>
+                                                      <block type="robot_delay" id="34" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="41">
+                                                            <field name="NUM">5000</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
                                   </block>
-                                </value>
+                                </next>
                               </block>
                             </next>
                           </block>
