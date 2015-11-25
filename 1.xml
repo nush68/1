@@ -13,7 +13,13 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_right" id="224"></block>
+          <block type="movement_right" id="224">
+            <next>
+              <block type="comment_comment" id="335">
+                <field name="TEXT">75</field>
+              </block>
+            </next>
+          </block>
         </statement>
         <next>
           <block type="controls_if" id="244" inline="false">
@@ -23,7 +29,13 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_left" id="261"></block>
+              <block type="movement_left" id="261">
+                <next>
+                  <block type="comment_comment" id="336">
+                    <field name="TEXT">40</field>
+                  </block>
+                </next>
+              </block>
             </statement>
             <next>
               <block type="oled_color" id="107">
