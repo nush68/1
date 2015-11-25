@@ -87,38 +87,23 @@
                                                           <block type="oled_color" id="148">
                                                             <field name="OBJECT">GREEN</field>
                                                             <next>
-                                                              <block type="led_select" id="145" inline="true">
-                                                                <field name="ACTION">ON</field>
-                                                                <value name="LED">
-                                                                  <block type="math_number" id="164">
-                                                                    <field name="NUM">6</field>
-                                                                  </block>
-                                                                </value>
+                                                              <block type="movement_forward" id="23">
                                                                 <next>
-                                                                  <block type="oled_color" id="149">
-                                                                    <field name="OBJECT">GREEN</field>
+                                                                  <block type="robot_delay" id="34" inline="true">
+                                                                    <value name="DELAY">
+                                                                      <block type="math_number" id="41">
+                                                                        <field name="NUM">1000</field>
+                                                                      </block>
+                                                                    </value>
                                                                     <next>
-                                                                      <block type="movement_forward" id="23">
+                                                                      <block type="movement_right" id="174">
                                                                         <next>
-                                                                          <block type="robot_delay" id="34" inline="true">
+                                                                          <block type="robot_delay" id="183" inline="true">
                                                                             <value name="DELAY">
-                                                                              <block type="math_number" id="41">
+                                                                              <block type="math_number" id="181">
                                                                                 <field name="NUM">1000</field>
                                                                               </block>
                                                                             </value>
-                                                                            <next>
-                                                                              <block type="movement_right" id="174">
-                                                                                <next>
-                                                                                  <block type="robot_delay" id="183" inline="true">
-                                                                                    <value name="DELAY">
-                                                                                      <block type="math_number" id="181">
-                                                                                        <field name="NUM">1000</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                  </block>
-                                                                                </next>
-                                                                              </block>
-                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
