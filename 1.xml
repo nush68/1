@@ -21,7 +21,7 @@
             </value>
             <next>
               <block type="oled_drawtext" id="27">
-                <field name="TEXT">               READY...SET...GOOOOOO!!!!!!</field>
+                <field name="TEXT">READY...SET...GOOOOOO!!!!!!</field>
                 <next>
                   <block type="oled_color" id="3">
                     <field name="OBJECT">GREEN</field>
