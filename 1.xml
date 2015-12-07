@@ -21,7 +21,7 @@
             </value>
             <next>
               <block type="oled_drawtext" id="7">
-                <field name="TEXT">Sourya Sucks brand</field>
+                <field name="TEXT">nush is messed up and has problems</field>
                 <next>
                   <block type="oled_color" id="8">
                     <field name="OBJECT">GREEN</field>
