@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="1" inline="true" x="103" y="-437">
+  <block type="controls_repeat" id="1" inline="true" x="133" y="-388">
     <value name="TIMES">
       <block type="math_number" id="2">
         <field name="NUM">10</field>
@@ -105,32 +105,6 @@
                                                                 <next>
                                                                   <block type="oled_color" id="8">
                                                                     <field name="OBJECT">GREEN</field>
-                                                                    <next>
-                                                                      <block type="movement_forward" id="24">
-                                                                        <next>
-                                                                          <block type="robot_delay" id="25" inline="true">
-                                                                            <value name="DELAY">
-                                                                              <block type="math_number" id="26">
-                                                                                <field name="NUM">1000</field>
-                                                                              </block>
-                                                                            </value>
-                                                                            <next>
-                                                                              <block type="movement_right" id="27">
-                                                                                <next>
-                                                                                  <block type="robot_delay" id="28" inline="true">
-                                                                                    <value name="DELAY">
-                                                                                      <block type="math_number" id="29">
-                                                                                        <field name="NUM">1000</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                  </block>
-                                                                                </next>
-                                                                              </block>
-                                                                            </next>
-                                                                          </block>
-                                                                        </next>
-                                                                      </block>
-                                                                    </next>
                                                                   </block>
                                                                 </next>
                                                               </block>
@@ -164,4 +138,5 @@
       </block>
     </statement>
   </block>
+  <block type="controls_if" id="125" inline="false" x="166" y="19"></block>
 </xml>
