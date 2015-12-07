@@ -2,7 +2,7 @@
   <block type="movement_forward" id="157" x="360" y="-408">
     <next>
       <block type="controls_if" id="125" inline="false">
-        <mutation elseif="1"></mutation>
+        <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="367" inline="true">
             <field name="OP">GT</field>
@@ -38,6 +38,9 @@
         </value>
         <statement name="DO1">
           <block type="movement_left" id="436"></block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="451"></block>
         </statement>
         <next>
           <block type="oled_cleardisplay" id="3">
