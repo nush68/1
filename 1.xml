@@ -1,23 +1,43 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="157" x="323" y="-434">
+  <block type="movement_forward" id="157" x="360" y="-408">
     <next>
       <block type="controls_if" id="125" inline="false">
         <mutation elseif="1"></mutation>
         <value name="IF0">
-          <block type="sensor_object" id="137">
-            <field name="OBJECT">LEFTFRONT</field>
+          <block type="logic_compare" id="367" inline="true">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="sensor_object" id="137">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="390">
+                <field name="NUM">75</field>
+              </block>
+            </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_right" id="147"></block>
+          <block type="movement_right" id="418"></block>
         </statement>
         <value name="IF1">
-          <block type="sensor_object" id="199">
-            <field name="OBJECT">RIGHTFRONT</field>
+          <block type="logic_compare" id="337" inline="true">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="sensor_object" id="199">
+                <field name="OBJECT">RIGHTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="425">
+                <field name="NUM">40</field>
+              </block>
+            </value>
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_left" id="185"></block>
+          <block type="movement_left" id="436"></block>
         </statement>
         <next>
           <block type="oled_cleardisplay" id="3">
