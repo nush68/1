@@ -95,34 +95,34 @@
                                                           <block type="oled_color" id="23">
                                                             <field name="OBJECT">GREEN</field>
                                                             <next>
-                                                              <block type="movement_forward" id="24">
+                                                              <block type="led_select" id="30" inline="true">
+                                                                <field name="ACTION">ON</field>
+                                                                <value name="LED">
+                                                                  <block type="math_number" id="31">
+                                                                    <field name="NUM">1</field>
+                                                                  </block>
+                                                                </value>
                                                                 <next>
-                                                                  <block type="robot_delay" id="25" inline="true">
-                                                                    <value name="DELAY">
-                                                                      <block type="math_number" id="26">
-                                                                        <field name="NUM">1000</field>
-                                                                      </block>
-                                                                    </value>
+                                                                  <block type="oled_color" id="8">
+                                                                    <field name="OBJECT">GREEN</field>
                                                                     <next>
-                                                                      <block type="movement_right" id="27">
+                                                                      <block type="movement_forward" id="24">
                                                                         <next>
-                                                                          <block type="robot_delay" id="28" inline="true">
+                                                                          <block type="robot_delay" id="25" inline="true">
                                                                             <value name="DELAY">
-                                                                              <block type="math_number" id="29">
+                                                                              <block type="math_number" id="26">
                                                                                 <field name="NUM">1000</field>
                                                                               </block>
                                                                             </value>
                                                                             <next>
-                                                                              <block type="led_select" id="30" inline="true">
-                                                                                <field name="ACTION">ON</field>
-                                                                                <value name="LED">
-                                                                                  <block type="math_number" id="31">
-                                                                                    <field name="NUM">0</field>
-                                                                                  </block>
-                                                                                </value>
+                                                                              <block type="movement_right" id="27">
                                                                                 <next>
-                                                                                  <block type="oled_color" id="8">
-                                                                                    <field name="OBJECT">GREEN</field>
+                                                                                  <block type="robot_delay" id="28" inline="true">
+                                                                                    <value name="DELAY">
+                                                                                      <block type="math_number" id="29">
+                                                                                        <field name="NUM">1000</field>
+                                                                                      </block>
+                                                                                    </value>
                                                                                   </block>
                                                                                 </next>
                                                                               </block>
