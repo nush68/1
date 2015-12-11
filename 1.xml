@@ -26,11 +26,6 @@
                 <field name="NUM">5</field>
               </block>
             </value>
-            <next>
-              <block type="oled_color" id="22">
-                <field name="OBJECT">GREEN</field>
-              </block>
-            </next>
           </block>
         </next>
       </block>
@@ -60,11 +55,6 @@
                 <field name="NUM">0</field>
               </block>
             </value>
-            <next>
-              <block type="oled_color" id="34">
-                <field name="OBJECT">GREEN</field>
-              </block>
-            </next>
           </block>
         </next>
       </block>
