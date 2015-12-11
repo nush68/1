@@ -17,7 +17,23 @@
       </block>
     </value>
     <statement name="DO0">
-      <block type="movement_right" id="5"></block>
+      <block type="movement_right" id="5">
+        <next>
+          <block type="led_select" id="20" inline="true">
+            <field name="ACTION">ON</field>
+            <value name="LED">
+              <block type="math_number" id="21">
+                <field name="NUM">5</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_color" id="22">
+                <field name="OBJECT">GREEN</field>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
     </statement>
     <value name="IF1">
       <block type="logic_compare" id="6" inline="true">
@@ -35,100 +51,26 @@
       </block>
     </value>
     <statement name="DO1">
-      <block type="movement_left" id="9"></block>
-    </statement>
-    <statement name="ELSE">
-      <block type="movement_forward" id="10"></block>
-    </statement>
-    <next>
-      <block type="led_select" id="20" inline="true">
-        <field name="ACTION">ON</field>
-        <value name="LED">
-          <block type="math_number" id="21">
-            <field name="NUM">5</field>
-          </block>
-        </value>
+      <block type="movement_left" id="9">
         <next>
-          <block type="oled_color" id="22">
-            <field name="OBJECT">GREEN</field>
+          <block type="led_select" id="32" inline="true">
+            <field name="ACTION">ON</field>
+            <value name="LED">
+              <block type="math_number" id="33">
+                <field name="NUM">0</field>
+              </block>
+            </value>
             <next>
-              <block type="led_select" id="23" inline="true">
-                <field name="ACTION">ON</field>
-                <value name="LED">
-                  <block type="math_number" id="24">
-                    <field name="NUM">4</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="oled_color" id="25">
-                    <field name="OBJECT">GREEN</field>
-                    <next>
-                      <block type="led_select" id="26" inline="true">
-                        <field name="ACTION">ON</field>
-                        <value name="LED">
-                          <block type="math_number" id="27">
-                            <field name="NUM">3</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="oled_color" id="28">
-                            <field name="OBJECT">GREEN</field>
-                            <next>
-                              <block type="led_select" id="29" inline="true">
-                                <field name="ACTION">ON</field>
-                                <value name="LED">
-                                  <block type="math_number" id="30">
-                                    <field name="NUM">2</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="oled_color" id="31">
-                                    <field name="OBJECT">GREEN</field>
-                                    <next>
-                                      <block type="led_select" id="32" inline="true">
-                                        <field name="ACTION">ON</field>
-                                        <value name="LED">
-                                          <block type="math_number" id="33">
-                                            <field name="NUM">0</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="oled_color" id="34">
-                                            <field name="OBJECT">GREEN</field>
-                                            <next>
-                                              <block type="led_select" id="35" inline="true">
-                                                <field name="ACTION">ON</field>
-                                                <value name="LED">
-                                                  <block type="math_number" id="36">
-                                                    <field name="NUM">1</field>
-                                                  </block>
-                                                </value>
-                                                <next>
-                                                  <block type="oled_color" id="37">
-                                                    <field name="OBJECT">GREEN</field>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
+              <block type="oled_color" id="34">
+                <field name="OBJECT">GREEN</field>
               </block>
             </next>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
+    <statement name="ELSE">
+      <block type="movement_forward" id="10"></block>
+    </statement>
   </block>
 </xml>
